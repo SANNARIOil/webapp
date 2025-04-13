@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4edd34;
+    padding: 10px 40px;
+    color: #000000;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.hexagon-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-row {
+    margin-bottom: 20px;
+}
+
+.info-row h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.info-row p {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.maps-button {
+    margin-top: 30px;
+}
+
+.maps-button a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #d3d2d2;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 300px;
+}
+
+.google-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.maps-button span {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .maps-button a {
+        margin: 0 auto;
+    }
+}
